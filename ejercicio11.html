@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio11</title>
+</head>
+<body>
+    <script>
+        var num=parseInt(prompt("Ingrese la cantidad de numeros a ingresar: "));
+        var numero=[];
+        var valores=0;
+        var par=0, impar=0;
+        for(x=0; x<num;x++){
+            valores=parseInt(prompt("Ingrese un numero: "));
+            numero[x]=valores;
+        }
+
+        for(x=0; x<num; x++){
+            if(numero[x]%2==0){
+                par++;
+            }
+            else{
+                impar++;
+            }
+        }
+
+
+        document.write("<p>La cantidad de numeros pares ingresados fueron: "+ par+"</p>");
+        document.write("<p>La cantidad de numeros impares ingresados fueron: "+ impar+"</p>");
+
+        
+        
+        
+    </script>
+</body>
+</html>

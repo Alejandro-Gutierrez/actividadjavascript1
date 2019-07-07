@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio17</title>
+</head>
+<body>
+    <script>
+        var cadena=[];
+        var letra;
+
+        for(x=0; x<8; x++){
+            do{
+                letra=prompt("Ingrese una letra: ")
+                if(letra.length!=1){
+                    alert("Por favor ingrese una letra")
+                }
+            }while(letra.length!=1);
+
+            cadena[x]=letra;
+            
+        }
+
+        document.write("<p>Cadena actual---</p>");
+        for(x=0; x<cadena.length;x++){
+            document.write("<strong>"+cadena[x]+"</strong>");
+        }
+
+        for(x=0; x<cadena.length; x++){
+            if(cadena[x]==="e" || cadena[x]==="E"){
+                cadena[x]="3";
+            }
+
+            if(cadena[x]==="a" || cadena[x]==="A"){
+                cadena[x]="4";
+            }
+
+        }
+
+        document.write("<p></p>");
+        document.write("<p>Cadena modificada</p>");
+        for(x=0; x<cadena.length;x++){
+            document.write("<strong>"+cadena[x]+"</strong>");
+        }
+        
+
+    
+    
+    
+    </script>
+</body>
+</html>

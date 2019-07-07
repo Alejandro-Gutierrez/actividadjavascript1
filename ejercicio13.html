@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio13</title>
+</head>
+<body>
+    <script>
+        var opcion=0;
+        
+        opcion=parseInt(prompt("Calculo de areas"+ "\n" +"[1]Triangulo"+ "\n" +"[2]Circulo" + "\n" + "[3]Rectangulo"+ "\n" + "Selecciones una de las opciones: "));
+        switch(opcion){
+            case 1:
+                var base, altura, areaT;
+                base=prompt("Ingrese la base del triangulo: ");
+                altura=prompt("Ingrese la altura del triangulo: ");
+                areaT=(base*altura)/2;
+                document.write("<p>EL area del triangulo es de:" + areaT+ " U </p>")
+
+            break;
+
+            case 2:
+                var radio, resultado;
+
+                radio=prompt("Ingrese el radio del circulo: ");
+                resultado=(Math.PI)*(Math.pow(radio ,2));
+
+                document.write("<p>El area del circulo es de: " + resultado+ "</p>")
+
+            break;
+
+            case 3:
+                var base, altura, areaR;
+                base=prompt("Ingrese la base del rectangulo: ");
+                altura=prompt("Ingrese la altura del rectangulo: ");
+                areaR=(base*altura);
+                document.write("<p>EL area del rectangulo es de:" + areaR+ " U </p>")
+
+            break;
+
+
+
+
+
+        }
+        
+    </script>
+</body>
+</html>

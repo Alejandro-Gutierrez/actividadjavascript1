@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio8</title>
+</head>
+<body>
+    <script>
+        var nombre, sueldo, sexo;
+        var mujer=0, hombre=0;
+        for(i=1; i<=10;i++){
+            nombre=prompt("Ingrese el nombre: ");
+            sueldo=parseFloat(prompt("Ingrese el sueldo: "));
+            sexo=parseInt(prompt("Ingrese el sexo ([1]Femenino, [2]Masculino)"))
+            if(sexo==1){ 
+                if(sueldo>500){
+                    mujer++;
+                }
+
+            }
+
+            if(sexo=2){
+                if(sueldo<400){
+                    hombre++;
+                }
+            }
+         }
+
+         document.writeln("<p>La cantidad de mujeres que tienen un sueldo mayor a 500 es: "+mujer +" </p>")
+         document.writeln("<p>La cantidad de hombres que tienen un sueldo menor a 400 es: " +hombre+"</p>")
+    
+    
+    </script>
+</body>
+</html>

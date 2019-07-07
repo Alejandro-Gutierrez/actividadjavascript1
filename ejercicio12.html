@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio12</title>
+</head>
+<body>
+    <script>
+        var numero, pos=0, neg=0
+        
+        do{
+            numero=parseInt(prompt("Ingrese un numero: "));
+            if (numero>0){
+                pos++;
+            }
+            else{
+                neg++;
+            }
+
+
+        }while(numero!=999);
+        
+        document.write("<p> La cantidad de numeros positivos son: "+ pos +"</p>")
+        document.write("<p> La cantidad de numeros negativos son: "+ neg +"</p>")
+        
+        
+        
+    </script>
+</body>
+</html>

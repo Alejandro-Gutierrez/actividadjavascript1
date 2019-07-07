@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio20</title>
+</head>
+<body>
+    <script>
+        var numeros=[];
+        var num;
+        var num2;
+        var cont=0;
+
+        num=parseInt(prompt("Ingrese el tamaño del vector: "));
+
+        for(x=0; x<num;x++){
+            num2=parseInt(prompt("Ingrese un numero: "));
+            numeros[x]=num2;
+
+
+
+        }
+    
+        for(x=0;x<numeros.length;x++){
+            if(x%2!=0){
+                if(numeros[x]%2==0){
+                    cont++;
+                }
+
+            }
+        }
+
+        document.write("Hay un numero par en una posicion impar: "+cont);
+    
+    
+    
+    </script>
+</body>
+</html>

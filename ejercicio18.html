@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio18</title>
+</head>
+<body>
+    <script>
+        var precio;
+        var descuento=0.15;
+        var valorT;
+
+        precio=parseFloat(prompt("Ingrese el valor del traje: "));
+
+        if(precio>150000){
+            document.write("<p><strong>Valor Neto: </strong>"+ precio+"</p>");
+            document.write("<p><strong>Decuento del 15%: </strong>"+(precio*descuento)+"</p>");
+            valorT=(precio-(precio*descuento));
+            document.write("<p><strong>Valor total: </strong>" + valorT + "</p>")
+            
+            
+        }
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

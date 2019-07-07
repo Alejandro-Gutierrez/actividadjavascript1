@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio16</title>
+</head>
+<body>
+    <script>
+        var letras=[];
+        var palabra;
+        var a=0, local;
+
+        for(x=0;x<10;x++){
+            palabra=prompt("Ingrese un palabra: ");
+            letras[x]=palabra;
+        }
+
+        for(x=0;x<letras.length;x++){
+            if((letras[x].length)>a){
+                a=letras[x].length;
+                local=x;
+
+            }
+        }
+
+        document.write("<p>La plabara con mas caracteres es: " + letras[local]+ "</p>");
+        document.write("<p>Cantidad de caracteres: "+letras[local].length+ "</p>");
+        document.write("<p>Posicion en el vector: "+ local+"</p>")
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio6</title>
+</head>
+<body>
+    <script>
+        var opcion, mayor=0, menor=0;
+        var peso;
+        opcion=parseInt(prompt("Ingrese la cantidad de persona para ingresar: "));
+        for(i=1; i<=opcion;i++){
+            peso=parseInt(prompt("Ingrese el peso(Kg) de la persona "+i));
+            if (peso>80){
+                mayor++;
+            }
+            else{
+                menor++;
+            }
+
+        }
+
+        document.writeln("<p>La cantidad de personas que su peso es mayor a 80 Kg es de: "+ mayor+" </p>")
+        document.writeln("<p>La cantidad de personas que su peso es menor de 80 Kg es de:" +menor+" </p>")
+    
+    </script>
+</body>
+</html>

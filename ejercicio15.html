@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio15</title>
+</head>
+<body>
+    <script>
+        
+        var num, num1, num2;
+        var numeros=[];
+
+        for(x=0; x<10;x++){
+            num=parseInt(prompt("Ingrese un numero: "+(x+1)));
+            numeros[x]=num;
+        }
+
+        num1=parseInt(prompt("Ingrese un numero: "));
+        num2=parseInt(prompt("Ingrese un numero: "))
+        
+
+       
+        for(x=0;x<numeros.length;x++){
+            if (numeros[x]===num1){
+                document.write("<p> EL numero "+ numeros[x]+ " se encuentra en el vector en la posicion " +x+"</p>");
+            }
+            if(numeros[x]===num2){
+                document.write("<p> EL numero "+ numeros[x]+ " se encuentra en el vector en la posicion " +x+"</p>");
+            }
+
+
+        }
+    
+    
+    
+    </script>
+</body>
+</html>
